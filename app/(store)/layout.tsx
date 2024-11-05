@@ -39,11 +39,15 @@ export default function RootLayout({
 				<body
 					className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 				>
-					<main className='p-4'>
+					<main className='p-4 h-screen bg-gray-50 text-black'>
 						<Header />
-						<Button variant='link' size='sm'>
+						{children}
+						{/* <Button variant='default' size='lg'>
 							Click me
 						</Button>
+						<Button variant='outline' size='lg'>
+							Click me
+						</Button> */}
 					</main>
 				</body>
 			</html>
